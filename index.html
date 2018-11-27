@@ -20,6 +20,8 @@
     <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
 
     <!-- Import favicon.ico -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -32,6 +34,11 @@
     <link href="./assets/css/boot.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/magni.css" rel="stylesheet">
+    <link href="./assets/css/animate.css" rel="stylesheet">
+    <link href="./assets/css/skillbar.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   </head>
 
@@ -39,13 +46,8 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="mr-4 pb-2" style="height:100%"src="./assets/image/suitcase.png" alt="Suitcase">Developer Portfolio</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="container wow animated fadeIn">
+      	<div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -58,13 +60,20 @@
             </li>
           </ul>
         </div>
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="mr-4 pb-2" style="height:100%"src="./assets/image/suitcase.png" alt="Suitcase">Developer Portfolio</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        
       </div>
     </nav>
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
-      <div class="container">
-        <h1 class="text-uppercase mb-0" style="font-size: 58px;">Jason Bernard D. Dela Torre</h1>
+      <div class="container wow animated fadeInDown">
+        <h1 class="mb-0" style="font-size: 58px;">Jason Bernard D. Dela Torre</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">Mechanical Engineer <i class="fas fa-times mx-3"></i> Software Developer</h2>
       </div>
@@ -72,8 +81,8 @@
 
     <!-- Portfolio Grid Section -->
     <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <div class="container wow animated fadeInLeft">
+        <h2 class="text-center text-secondary mb-0">My Projects</h2>
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-md-6 col-lg-4">
@@ -85,8 +94,9 @@
               </div>
               <img style="height:200px;"class="img-fluid" src="./assets/image/caps1.png" alt="Capstone 1">
             </a>
-            <h5 style="text-align: center; margin-top: 10px; color:#18bc9c;">Capstone 1</h5>
-            <h3 style="text-align: center; margin-top: 10px; color:#18bc9c;">Top Corner</h3>
+            <h5 style="text-align: center; margin-top: 10px; color:#265a50;">Capstone 1</h5>
+            <h3 style="text-align: center; margin-top: 10px; color:#265a50;">Top Corner</h3>
+            <h6 style="text-align: center; margin-top: 10px; color:#265a50;">HTML + CSS</h6>
           </div>
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="https://the-bored-gamer.000webhostapp.com/">
@@ -97,8 +107,9 @@
               </div>
               <img style="height:200px;" class="img-fluid" src="./assets/image/caps2.png" alt="Capstone 2">
             </a>
-              <h5 style="text-align: center; margin-top: 10px; color:#18bc9c;">Capstone 2</h5>
-              <h3 style="text-align: center; margin-top: 10px; color:#18bc9c;">The Bored Gamer</h3>
+              <h5 style="text-align: center; margin-top: 10px; color:#265a50;">Capstone 2</h5>
+              <h3 style="text-align: center; margin-top: 10px; color:#265a50;">The Bored Gamer</h3>
+              <h6 style="text-align: center; margin-top: 10px; color:#265a50;">JavaScript + PHP + MySql</h6>
           </div>
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
@@ -109,18 +120,107 @@
               </div>
               <img style="height:200px;"  class="img-fluid" src="./assets/image/caps3.jpg" alt="Capstone 3">
             </a>
-            <h5 style="text-align: center; margin-top: 10px; color:#18bc9c;">Capstone 3</h5>
-            <h3 style="text-align: center; margin-top: 10px; color:#18bc9c;">Under construction..</h3>
+            <h5 style="text-align: center; margin-top: 10px; color:#265a50;">Capstone 3</h5>
+            <h3 style="text-align: center; margin-top: 10px; color:#265a50;">Host Football</h3>
+            <h6 style="text-align: center; margin-top: 10px; color:#265a50;">Laravel Framework + MySql</h6>
           </div>
         </div>
       </div>
     </section>
 
+
+	<section class="bg-primary text-white mb-0" id="skills">
+		<div class="container wow aimated fadeInDown">
+			<h2 class="text-center text-white">My Skillsets</h2>
+			<hr class="star-light mb-5">
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 col-md-12">
+
+					<!-- skillbarA -->   
+			        <div class="row">
+			            <div class="col-md-12">
+			                <div class="skillbar" data-percent="90%">
+			                    <div class="skillbar-title">HTML</div>
+			                    <div class="skill-bar-percent">90%</div>
+			                    <div class="skillbar-bar" style="width: 90%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="80%">
+			                    <div class="skillbar-title">CSS / BOOTSTRAP</div>
+			                    <div class="skill-bar-percent">80%</div>
+			                    <div class="skillbar-bar" style="width: 80%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="70%">
+			                    <div class="skillbar-title">Javascript ECMA 2016</div>
+			                    <div class="skill-bar-percent">70%</div>
+			                    <div class="skillbar-bar" style="width: 70%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="30%">
+			                    <div class="skillbar-title">jQuery</div>
+			                    <div class="skill-bar-percent">30%</div>
+			                    <div class="skillbar-bar" style="width: 30%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="40%">
+			                    <div class="skillbar-title">PHP</div>
+			                    <div class="skill-bar-percent">40%</div>
+			                    <div class="skillbar-bar" style="width: 40%;"></div>
+			                </div>
+			            </div>
+			        </div>
+				</div>
+
+				<div class="col-lg-6 col-sm-12 col-md-12">
+
+					<!-- skillbarB -->	    
+			        <div class="row">
+			            <div class="col-md-12">
+			                <div class="skillbar" data-percent="35%">
+			                    <div class="skillbar-title">Laravel</div>
+			                    <div class="skill-bar-percent">35%</div>
+			                    <div class="skillbar-bar" style="width: 35%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="65%">
+			                    <div class="skillbar-title">MySql</div>
+			                    <div class="skill-bar-percent">65%</div>
+			                    <div class="skillbar-bar" style="width: 65%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="35%">
+			                    <div class="skillbar-title">React/Redux + NPM</div>
+			                    <div class="skill-bar-percent">35%</div>
+			                    <div class="skillbar-bar" style="width: 35%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="30%">
+			                    <div class="skillbar-title">Express JS</div>
+			                    <div class="skill-bar-percent">30%</div>
+			                    <div class="skillbar-bar" style="width: 30%;"></div>
+			                </div>
+
+			                <div class="skillbar" data-percent="15%">
+			                    <div class="skillbar-title">MongoDB</div>
+			                    <div class="skill-bar-percent">15%</div>
+			                    <div class="skillbar-bar" style="width: 15%;"></div>
+			                </div>
+			            </div>
+			        </div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
     <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
-        <hr class="star-light mb-5">
+    <section class="text-secondary mb-0" id="about">
+      <div class="container wow animated fadeInRight">
+        <h2 class="text-center text-secondary">About Me</h2>
+        <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-lg-12 ml-auto">
             <p style="text-align: justify;" class="lead">A mechanical engineer who plans to transition to web development and big data. Interested in up and coming technologies around the world. A student and a nerd at heart. Spends his free time watching math, and physics videos on youtube, with the occassional twitch streams. Hopes to develop software that can change status quo.</p>
@@ -133,11 +233,11 @@
           <div class="col-lg-12 ml-auto">
             <div class="row">
               <div class="col-lg-4 ml-auto" style="text-align: center;">
-                <img src="./assets/image/idea.png" alt="Critical Thinker">
+                <img src="./assets/image/creative.png" alt="Critical Thinker">
                 <p style="font-size: 20px;" class="text-center mt-3">Critical Thinker</p>
               </div>
               <div class="col-lg-4 ml-auto" style="text-align: center;">
-                <img src="./assets/image/podium.png" alt="Goal Driven">
+                <img src="./assets/image/top.png" alt="Goal Driven" style="color:#265a50;">
                 <p style="font-size: 20px;" class="text-center mt-3">Goal Driven</p>
               </div>
               <div class="col-lg-4 ml-auto" style="text-align: center;">
@@ -151,10 +251,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-        <hr class="star-dark mb-5">
+    <section id="contact" class="bg-primary">
+      <div class="container wow animated fadeInDown">
+        <h2 class="text-center text-white mb-0">Send a Message</h2>
+        <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -176,13 +276,6 @@
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Message</label>
                   <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
                   <p class="help-block text-danger"></p>
@@ -190,8 +283,8 @@
               </div>
               <br>
               <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl col-md-4" id="sendMessageButton">Send</button>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-secondary btn-md col-md-4" id="sendMessageButton">Send</button>
               </div>
             </form>
           </div>
@@ -203,17 +296,17 @@
     <footer class="footer text-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
+          <div class="col-md-6 mb-5 mb-lg-0">
+            <h4 class="mb-4">Location</h4>
             <p class="lead mb-0">3F Casswyn Building
               <br>Timog Avenue, Quezon City</p>
           </div>
-           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Contact Details</h4>
+           <div class="col-md-6 mb-5 mb-lg-0">
+            <h4 class="mb-4">Contact Details</h4>
             <p class="lead mb-0">+63 0999 1234567
               <br> jasondelatorre@sample.com </p>
           </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
+<!--           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Social Networks</h4>
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
@@ -237,7 +330,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
           <!-- <div class="col-md-4">
             <h4 class="text-uppercase mb-4">About Freelancer</h4>
             <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
@@ -247,9 +340,9 @@
       </div>
     </footer>
 
-    <div class="copyright py-4 text-center text-white">
+    <div class="copyright py-2 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; 2018</small>
+        <p>Copyright &copy; 2018</p>
       </div>
     </div>
 
@@ -260,27 +353,10 @@
       </a>
     </div>
 
- 
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-
-    <!-- <script src="./assets/js/boot.js"></script> -->
-
-    <!-- Plugin JavaScript -->
-    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
-    <!-- <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
-
-    <!-- Contact Form JavaScript -->
-    <!-- <script src="js/jqBootstrapValidation.js"></script> -->
-    <!-- <script src="js/contact_me.js"></script> -->
-
-    <!-- Custom scripts for this template -->
-    <!-- <script src="js/freelancer.min.js"></script> -->
-    <!-- <script src="./assets/js/index.js"></script> -->
-
-    <!-- <script src="./assets/js/boot.js"></script> -->
-
   </body>
-
+	<script src="./assets/js/wow.min.js"></script>
+	<script>
+    	new WOW().init();
+    </script>
+    <script src="./assets/js/smoothscroll.js"></script>
 </html>

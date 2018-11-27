@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-    font-family: Montserrat
+    font-family: 'Istok Web', sans-serif;
 }
 
 hr.star-dark,
@@ -50,7 +50,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c
+    background-color: #265a50
 }
 
 hr.star-dark {
@@ -108,7 +108,7 @@ section h2 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-weight: 700;
-    font-family: Montserrat
+    font-family: 'Cabin', sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -125,7 +125,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #18bc9c
+    color: #265a50
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
@@ -134,7 +134,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: #18bc9c
+    color: #265a50
 }
 
 #mainNav .navbar-toggler {
@@ -159,13 +159,13 @@ section h2 {
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
         color: #fff;
-        background: #18bc9c
+        background: #265a50
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
     #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
         color: #fff;
-        background: #18bc9c
+        background: #265a50
     }
     #mainNav.navbar-shrink {
         padding-top: .5rem;
@@ -220,7 +220,8 @@ header.masthead h2 {
     -webkit-transition: all ease .5s;
     transition: all ease .5s;
     opacity: 0;
-    background-color: rgba(24, 188, 156, .9)
+    /*background-color: rgba(24, 188, 156, .9)*/
+    background-color: #265a50;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -321,7 +322,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c
+    color: #265a50
 }
 
 form .row:first-child .floating-label-form-group {
@@ -340,7 +341,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-    color: #18bc9c
+    color: #265a50
 }
 
 a:active,
@@ -354,7 +355,7 @@ a:hover {
 }
 
 .bg-primary {
-    background-color: #18bc9c!important
+    background-color: #265a50!important
 }
 
 .bg-secondary {
@@ -370,15 +371,18 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #18bc9c;
-    border-color: #18bc9c
+    background-color: #265a50;
+    border-color: #265a50
 }
 
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-    background-color: #128f76;
-    border-color: #128f76
+/*    background-color: #4fbfaa;
+    border-color: #4fbfaa;*/
+
+    background-color: white;
+    border-color: white;
 }
 
 .btn-secondary {
@@ -389,9 +393,27 @@ a:hover {
 .btn-secondary:active,
 .btn-secondary:focus,
 .btn-secondary:hover {
-    background-color: #1a252f;
-    border-color: #1a252f
+/*    background-color: #4fbfaa;
+    border-color: #4fbfaa;*/
+
+    background-color: #eee;
+    border-color: #ddd;
+    color:#2c3e50;
 }
 
 /* ADDITIONAL */
 
+::placeholder {
+    opacity: 1;
+    color:white !important;
+}
+
+.form-control {
+    background-color: #265a50;
+    color:white !important;
+}
+
+.form-control:focus {
+    background-color: #265a50;
+    color: white !important;
+}
