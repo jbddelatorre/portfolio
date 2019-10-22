@@ -378,6 +378,10 @@
   </script>
   <script type="text/javascript">
     Sentry.init({ dsn: 'https://86042463607346f4b97c8ff3c8a37040@sentry.io/1788778' });
+
+    Sentry.configureScope(function(scope) {
+      scope.setExtra("environment_setting", "This is an env setting variable");
+    });
   </script>
 
   <script type="text/javascript">
