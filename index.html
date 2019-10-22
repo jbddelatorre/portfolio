@@ -386,7 +386,9 @@
 
   <script type="text/javascript">
     console.log('error!')
-    errorFunction()
+    Sentry.configureScope(function(scope) {
+      scope.setTag("HOSTNAME", window.location.hostname);
+    });
   </script>
 
 
